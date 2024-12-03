@@ -7,4 +7,5 @@ app = FastAPI()
 
 @app.get("/")
 def home():
+    # add log here
     return {"timestamp": datetime.now()}
