@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from datetime import datetime
 
 
 app = FastAPI()
@@ -6,4 +7,5 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return "Working"
+    # add log here
+    return {"timestamp": datetime.now()}
